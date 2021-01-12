@@ -1,1 +1,35 @@
+header {
+    padding: 20px;
+    background: rgb(63, 63, 63);
+}
+h1 {
+    color: white;
+    text-align: center;
+}
 
+#search {
+    width: 150px;
+}
+
+#button {
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+#leftbar {
+    width: 20%;
+    height: 100%;
+    border: 2px solid black;
+    position: fixed;
+    left: 0;
+    
+    
+}
+
+#weatherapi {
+    border: 1px solid black;
+    width: 80%;
+    float:right;
+    height: 100%;
+    padding: 5px;
+}
