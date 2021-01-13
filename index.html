@@ -25,6 +25,7 @@
 <div id="weatherapi">
 <h1 id="heading"></h1>
 <p id="paraone">
+
     
     <div id="content"></div>
     <div id="content2"></div>
@@ -41,7 +42,8 @@ $("#button").click(function run() {
     var cityname = $("#search").val()
 
     var apikey = "d20c8e5b0b51eb6cb1f0eac2c05fd576"
-
+  // 4 day  pro.openweathermap.org/data/2.5/forecast/hourly?q=
+//  http://api.openweathermap.org/data/2.5/weather?q=
 
     var queryurl = "http://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid=" + apikey;
 
@@ -50,9 +52,10 @@ $("#button").click(function run() {
      method: "GET"
     }).then(function(data){
         console.log(data)
-        console.log("Wind speed: " + data.description)
-        $("#content").html("Temperature: " + data.weather[0])
+        console.log("Wind speed: " + data)
+        $("#content").html(JSON.stringify(data))
         $("#heading").html(cityname)
+    //    $("#list").html(JSON.stringify(data[2]))
     })
 
 
