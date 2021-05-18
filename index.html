@@ -25,52 +25,14 @@
 <div id="weatherapi">
 <h1 id="heading"></h1>
 <p id="paraone">
-
+<h4 id="main"></h4>
     
     <div id="content"></div>
     <div id="content2"></div>
   </p>
 
 </div>
-
-<script>
-
-
-$("#button").click(function run() {
-
-    var button = $("#button")
-    var cityname = $("#search").val()
-
-    var apikey = "d20c8e5b0b51eb6cb1f0eac2c05fd576"
-  // 4 day  pro.openweathermap.org/data/2.5/forecast/hourly?q=
-//  http://api.openweathermap.org/data/2.5/weather?q=
-
-    var queryurl = "http://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid=" + apikey;
-
-    $.ajax({
-     url: queryurl,
-     method: "GET"
-    }).then(function(data){
-        console.log(data)
-        console.log("Wind speed: " + data)
-        $("#content").html(JSON.stringify(data))
-        $("#heading").html(cityname)
-    //    $("#list").html(JSON.stringify(data[2]))
-    })
-
-
-
-
-
-})
-
-
-
-
-</script>
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
