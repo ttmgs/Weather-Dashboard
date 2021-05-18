@@ -18,11 +18,10 @@ button.click(function run() {
       console.log("Wind speed: " + data)
       // $("#content").html(JSON.stringify(data))
       $("#heading").html(cityname)
-      // $("#main").html(JSON.stringify(`Main:${data}`)   
+      $("#main").html(JSON.stringify(`Main:${data}`))   
 
-     var showMain = $("#main")
-   var main = `Main: ${data}`
-         showMain.html(JSON.stringify(main))
+     var showMain = "Main: "
+   $("#main").html(JSON.stringify(showMain + `${data[1]}`))
 
 
   })
