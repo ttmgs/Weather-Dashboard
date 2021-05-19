@@ -18,10 +18,18 @@ button.click(function run() {
       console.log("Wind speed: " + data)
       // $("#content").html(JSON.stringify(data))
       $("#heading").html(cityname)
-      $("#main").html(JSON.stringify(`Main:${data}`))   
+      // $("#main").html(JSON.stringify(`Main:${data}`))   
 
-     var showMain = "Main: "
-   $("#main").html(JSON.stringify(showMain + `${data[1]}`))
+for(yo in data)
+if(data.hasOwnProperty(yo)) {
+  var value= data[yo]
+}
+$("#main").html(JSON.stringify(yo))
+
+// 
+
+  //    var showMain = "Main: "
+  //  $("#main").html(JSON.stringify(data))
 
 
   })
