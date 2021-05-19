@@ -18,13 +18,50 @@ button.click(function run() {
       console.log("Wind speed: " + data)
       // $("#content").html(JSON.stringify(data))
       $("#heading").html(cityname)
-      // $("#main").html(JSON.stringify(`Main:${data}`))   
+      $("#temp").text("Temperature: " + data.main.temp + " °F") 
+      $("#windspeed").text("Wind Speed: " + data.wind.speed + " mph") 
 
-for(yo in data)
-if(data.hasOwnProperty(yo)) {
-  var value= data[yo]
-}
-$("#main").html(JSON.stringify(yo))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(weather in data)
+// if(data.hasOwnProperty(weather)) {
+//   var value= data[weather]
+// }
+// $("#value").html(JSON.stringify("Wind speed: " + value))
+
+
+
+
+
+
+
+
+
+// for(key in data)
+// if(data.hasOwnProperty(key)) {
+//   var maindata= data[key]
+// }
+// $("#main").html(JSON.stringify("main: " + maindata))
+
 
 // 
 
