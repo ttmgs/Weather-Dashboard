@@ -15,64 +15,17 @@ button.click(function run() {
    method: "GET"
   }).then(function(data){
       console.log(data)
-      console.log("Wind speed: " + data)
-      // $("#content").html(JSON.stringify(data))
+
+      // grabbing html element id & matching them with api value
       $("#heading").html(cityname)
       $("#temp").text("Temperature: " + data.main.temp + " °F") 
+      $("#country").text("Country: " + data.sys.country) 
+      $("#description").text("Description: " + data.weather[description]) 
+      $("#feels").text("Feels like: " + data.main.feels_like + " °F") 
+      $("#winddirection").text("Wind Direction: " + data.wind.direction.name) 
       $("#windspeed").text("Wind Speed: " + data.wind.speed + " mph") 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for(weather in data)
-// if(data.hasOwnProperty(weather)) {
-//   var value= data[weather]
-// }
-// $("#value").html(JSON.stringify("Wind speed: " + value))
-
-
-
-
-
-
-
-
-
-// for(key in data)
-// if(data.hasOwnProperty(key)) {
-//   var maindata= data[key]
-// }
-// $("#main").html(JSON.stringify("main: " + maindata))
-
-
-// 
-
-  //    var showMain = "Main: "
-  //  $("#main").html(JSON.stringify(data))
-
-
-  })
-
-
-
-
-
-})
+  });
+});

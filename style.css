@@ -17,7 +17,7 @@ h1 {
 }
 
 #leftbar {
-    width: 150px;
+    width: 20%;
     height: 100%;
     border: 2px solid black;
     position: fixed;
