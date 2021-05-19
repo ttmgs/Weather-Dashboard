@@ -10,5 +10,5 @@ This weather dashboard app allows you to get the most up to date weather forecas
 - JQUERY
 
 
-## Link
+## Deployed Link
 https://ttmgs.github.io/Weather-Dashboard/
