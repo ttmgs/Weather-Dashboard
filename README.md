@@ -1,7 +1,14 @@
 # Weather-Dashboard
 
 ## Description
-This app allows you to search any city name in the world and get the accurate weather for the 4 day time period.
+This weather dashboard app allows you to get the most up to date weather forecast for a city anywhere in the world. Simply search the city and an API call generates the city weather information
+
+## Technologies Used
+- HTML
+- CSS
+- JAVASCRIPT
+- JQUERY
+
 
 ## Link
 https://ttmgs.github.io/Weather-Dashboard/
