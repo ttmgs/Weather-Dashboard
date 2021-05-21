@@ -20,10 +20,14 @@ button.click(function run() {
       $("#heading").html(cityname)
       $("#temp").text("Temperature: " + data.main.temp + " °F") 
       $("#country").text("Country: " + data.sys.country) 
-      $("#description").text("Description: " + data.weather[description]) 
+      $("#long").text("Longitude: " + data.coord.lon) 
+      $("#lat").text("Latitude: " + data.coord.lat) 
+      $("#description").text(`Today in ${cityname}, we are expecting ` + data.weather[0].description) 
       $("#feels").text("Feels like: " + data.main.feels_like + " °F") 
       $("#winddirection").text("Wind Direction: " + data.wind.direction.name) 
       $("#windspeed").text("Wind Speed: " + data.wind.speed + " mph") 
+      $("#base").text("Longitude: " + data.base) 
+
 
 
 

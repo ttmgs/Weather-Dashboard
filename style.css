@@ -2,14 +2,15 @@ header {
     padding: 20px;
     background: rgb(63, 63, 63);
 }
-h1 {
-    color: white;
+#title {
+    color: rgb(228, 228, 235);
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#search {
-    width: 150px;
-}
+/* #search {
+    width: auto;
+} */
 
 #button {
     border: 1px solid black;
@@ -17,19 +18,22 @@ h1 {
 }
 
 #leftbar {
-    width: 20%;
+    width: 30%;
     height: 100%;
-    border: 2px solid black;
     position: fixed;
     left: 0;
-    
-    
 }
 
 #weatherapi {
-    border: 1px solid black;
-    width: 80%;
-    float:right;
     height: 100%;
     padding: 5px;
+    text-align: center;
+}
+
+
+#description {
+    text-align: center;
+    margin-top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
