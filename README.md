@@ -21,3 +21,4 @@ https://ttmgs.github.io/Weather-Dashboard/
 ## Features to implement in the future
 - Images of the current weather forecast using API
 - Added CSS styling
+- PWA app
