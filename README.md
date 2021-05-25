@@ -16,3 +16,8 @@ This weather dashboard app allows you to get the most up to date weather forecas
 
 ## Deployed Link
 https://ttmgs.github.io/Weather-Dashboard/
+
+
+## Features to implement in the future
+- Images of the current weather forecast using API
+- Added CSS styling
